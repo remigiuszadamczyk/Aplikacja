@@ -10,3 +10,8 @@ def Calculator(a,b,c):
             return a / c
     else: 
         print("Invalid operation. Please use +, -, *, or /.")
+
+def NWD(a,b):
+    while b != 0:
+        a, b = b, a % b
+    return a
